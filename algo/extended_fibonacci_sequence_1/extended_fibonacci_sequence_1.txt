@@ -1,0 +1,22 @@
+Extended Fibonacci Sequence
+
+You are given a sequence of Fibonacci numbers, defined as F0 = 0, F1 = 1, and Fn = Fn-1 + Fn-2 for all n>1.
+
+Define the nth term of a sequence S as Sn = Sn-1 || Fn, where ‘||’ is the concatenation operator.
+
+Your task: 
+Given n, return the last 11 digits of  i=1nSi.
+Bounds: 
+1≤n≤1000
+
+Input: 
+Line 1 contains a single number n.
+
+Output: 
+The output contains at most 11 digits on one line.
+
+Sample Input:
+30
+
+Sample Output:
+64233954228

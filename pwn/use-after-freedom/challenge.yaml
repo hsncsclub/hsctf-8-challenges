@@ -1,0 +1,13 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: use-after-freedom
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: false
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+  image: us.gcr.io/hsctf-8/use-after-freedom-challenge:bc15e9f98fee50dfce61ab7bf88ddb4990f1544ea513cfe984e120326647125d

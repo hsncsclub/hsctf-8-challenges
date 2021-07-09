@@ -1,0 +1,13 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: house-of-sice
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: false
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+  image: us.gcr.io/hsctf-8/house-of-sice-challenge:b5561116b781145627b747ae22aca25950dc3bfa732046307830274ae0b5b23c

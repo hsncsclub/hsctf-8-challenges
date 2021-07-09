@@ -1,0 +1,22 @@
+Extended Fibonacci Sequence 2
+
+You are given a sequence of Fibonacci numbers, defined as F0 = 4, F1 = 5, and Fn = Fn-1 + Fn-2 for all n>1.
+
+Define the nth term of a sequence S as Sn = Sn-1 + Fn.
+
+Your task: 
+Given n, return the last 11 digits ofi=1nSi.
+Bounds: 
+1≤n≤1000
+
+Input: 
+Line 1 contains a single number n.
+
+Output: 
+The output contains at most 11 digits on one line.
+
+Sample Input:
+30
+
+Sample Output:
+5702727

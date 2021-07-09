@@ -1,0 +1,13 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: lunch-with-the-cia
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: true
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+  image: eu.gcr.io/hsctf-8-316912/lunch-with-the-cia-challenge:a24d0e256b8f3dde4b8d1c63ae5f97ba1ac25c9a0d7c0be854fe178fe064fce5

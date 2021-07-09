@@ -1,0 +1,14 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: zkp
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: false
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+    image: us.gcr.io/hsctf-8/test-crypto-healthcheck:8ef518b7f34e81b0b9ca9eebeaed9c972d384cab68c550a0a537ffd59dc05d9f
+  image: us.gcr.io/hsctf-8/test-crypto-challenge:e3bb7701b87ad6329f27002b3519f03b1a0b79156f9bd168537f98e15e441d56

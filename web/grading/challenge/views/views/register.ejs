@@ -1,0 +1,28 @@
+<%- include("./partials/header.ejs") %>
+<h1>Welcome to Formable</h1>
+<h2>Register</h2>
+
+<div class="container mid">
+    <% if(err) { %> 
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <%= err %>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    <% } %> 
+
+    <a href="/login">Login</a> instead?
+    <form action="/register" method="POST" >
+        <div class="mb-3">
+            <label for="username">Username</label>
+            <input class="form-control" name="username" type="text">
+        </div>
+        <div class="mb-3">
+            <label for="password">Password</label>
+            <input class="form-control" type="password" name="password">
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</div>
+
+<footer>
+<%- include("./partials/footer.ejs") %> 

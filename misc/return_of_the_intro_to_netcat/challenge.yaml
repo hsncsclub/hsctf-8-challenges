@@ -1,0 +1,14 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: return_of_the_intro_to_netcat
+spec:
+  deployed: true
+  powDifficultySeconds: 1
+  network:
+    public: false
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: true
+    image: us.gcr.io/hsctf-8/return-of-the-intro-to-netcat-healthcheck:da33cd8c5354fcc1809dc497988730fc67baf6ee7a0e2da66e6d07bb3c8e7238
+  image: us.gcr.io/hsctf-8/return-of-the-intro-to-netcat-challenge:edd07b1ef742b0639be7d749a40c3c020fb4875dfa1d695348072eb688b116ee

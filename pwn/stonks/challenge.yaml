@@ -1,0 +1,14 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: stonks
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: false
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+    image: kind/healthcheck:da33cd8c5354fcc1809dc497988730fc67baf6ee7a0e2da66e6d07bb3c8e7238
+  image: kind/challenge:63fd4e0334c2c9608eed6ec2682b2a711e1b8bcffee89e718fa2cf1d3f22ea4e

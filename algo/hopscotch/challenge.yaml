@@ -1,0 +1,14 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: hopscotch
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: true
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+    image: us.gcr.io/hsctf-8/test-crypto-healthcheck:8ef518b7f34e81b0b9ca9eebeaed9c972d384cab68c550a0a537ffd59dc05d9f
+  image: eu.gcr.io/hsctf-8-316912/hopscotch-challenge:5573354d7ad5e9dac7ddacf5741391b370b42452f1d8a338ff89671329967b52

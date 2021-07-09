@@ -1,0 +1,7 @@
+CLUSTER_TYPE=gce
+PROJECT=hsctf-8-316912
+ZONE=europe-west4-b
+REGISTRY=eu.gcr.io
+CLUSTER_NAME=kctf-cluster
+DOMAIN_NAME=hsc.tf
+EMAIL_ADDRESS=
